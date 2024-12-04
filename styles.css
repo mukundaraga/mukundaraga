@@ -1,0 +1,237 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    background-color: #f5efe0;
+    color: #333;
+}
+
+/* Header */
+
+/* Flexbox styling for the header container */
+header .container {
+    background-color: #fff;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;            /* Enable flexbox */
+    justify-content: space-between; /* Space between h1 and nav */
+    align-items: center;      /* Vertically center items */
+    padding: 20px;            /* Add some padding for better spacing */
+}
+
+/* Style for the h1 */
+header h1 {
+    font-family: 'Montserrat', serif;
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Style for the navigation list */
+nav ul {
+    list-style: none;
+    display: flex;            /* Display list items inline */
+    gap: 20px;                /* Space between each list item */
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for individual links */
+nav ul li a {
+    color: #ea0958;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #331ddc; /* Hover effect */
+}
+
+
+
+
+/* Content Section */
+.content {
+    max-width: 1200px;
+    margin: 120px auto; /* Adjusted to ensure content is not hidden behind the fixed header */
+    padding: 20px;
+    text-align: center;
+}
+
+.content h2 {
+    font-family: 'Montserrat', serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Blog List */
+.blog-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+/* Updated Blog Item */
+.blog-item {
+    padding-top: auto;
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: flex-start; /* Align items at the start */
+    margin-bottom: 10px; /* Space between blog items */
+    margin-left: 2in;
+    margin-right: auto;
+}
+
+.blog-description {
+    flex: 1; /* Allow this section to take available space */
+    margin-left: 20px; /* Add space between image and description */
+}
+
+.blog-date {
+    margin-left: 5px; /* Adjust this value to move the date further left */
+    font-size: 0.9em; /* Slightly smaller font for the date */
+    color: #666; /* Lighter color for the date */
+}
+
+/* Fixed Size for Images */
+.blog-image-container {
+    width: 200px; /* Set fixed width for images */
+    height: 200px; /* Set fixed height for images */
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners */
+    margin-right: 20px; /* Space between image and description */
+}
+
+.work-image {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 8px; /* Match the rounded corners */
+}
+
+/* Description styling */
+.blog-description {
+    flex: 1; /* Take up the remaining space */
+    text-align: left; /* Align text to the left */
+}
+
+.blog-description h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2em; /* Adjust heading size */
+}
+
+.blog-description h3 a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ea0958; /* Link color */
+}
+
+.blog-description h3 a:hover {
+    color: #331ddc; /* Hover color for links */
+}
+
+.blog-description p {
+    margin-top: 5px; /* Space above the description text */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+    width: 40%; /* Adjust to fit 40% of the container width */
+    height: auto;
+    position: sticky;
+    top: 20px; /* Adjust as needed to control how far from the top the image sticks */
+    right: 0;
+}
+
+p {
+    width: 55%; /* Adjust the width of the text container */
+    text-align: justify;
+    font-size: 1.1em;
+    margin-right: 5%;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+}
+
+/* Footer Styling */
+.footer-icons {
+    display: flow-root;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 20px; /* Space between icons */
+}
+
+.icon {
+    width: 40px; /* Adjust the size as needed */
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.3); /* Slightly enlarge icons on hover */
+    opacity: 0.8; /* Optional: add opacity change on hover */
+}
+
+.social-media {
+    display: flex;
+    justify-content: center; /* Align to the end of the container */
+    gap: 15px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px; /* Adjust size here */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #bf4aa8;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #fff; /* Dark background for footer */
+    color: #ea0958; /* White text color */
+    padding: 20px 0; /* Padding above and below */
+    text-align: center; /* Center the text */
+    position: relative; /* Ensure footer is positioned normally */
+    width: 100%; /* Full width */
+    bottom: 0; /* Align at the bottom */
+}
+
+.footer-content {
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Center align */
+}
+
+.footer-content p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Font size for footer text */
+}
+
+.social-media {
+    display: inline; /* Use flexbox for alignment */
+    justify-content: center; /* Center the icons */
+    gap: 15px; /* Space between icons */
+    margin-top: 10px; /* Space above social media icons */
+}
+
+.social-icon {
+    color: #ea0958; /* White color for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for social media links */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+.social-icon:hover {
+    color: #7609ea; /* Change color on hover */
+}
+
